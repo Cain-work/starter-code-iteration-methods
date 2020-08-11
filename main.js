@@ -27,3 +27,17 @@ const greenEyes2 = users.filter(function (user) {
     return user.eyeColor === "green"
 })
 printKata(0, greenEyes1)   // If you don't have this function already, see the "Set up" section above.
+
+const active = users.filter(user => user.isActive === true)
+printKata(1, active)
+
+const email1 = users.map(user => user.email)
+printKata(2, email1)
+
+const company = users.some(user => user.company === "OVATION")
+printKata(3, company)
+
+const age1 = users.find(user => user.age >= 38)
+printKata(4, age1)
+
+
