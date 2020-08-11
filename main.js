@@ -7,7 +7,7 @@ console.log(users)
 
 // Append the katas to this element:
 const main = document.querySelector('main')
-function printKata (kataNumber, object) {
+function printKata(kataNumber, object) {
     // For the usage of the DETAILS and SUMMARY tags
     // in HTML, see: http://mdn.io/details-element
     const detailsElement = document.createElement('details')
@@ -39,5 +39,8 @@ printKata(3, company)
 
 const age1 = users.find(user => user.age >= 38)
 printKata(4, age1)
+
+const age2 = users.map(user => user.isActive === true); users.find(user => user.age >= 38)
+printKata(5, age2)
 
 
